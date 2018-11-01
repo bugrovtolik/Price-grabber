@@ -28,7 +28,7 @@ public class InstrumentGrabber {
         instrument.setUrl(url);
 
         //looking for name
-        element = document.select("[itemprop=name]").first();
+        element = document.select("[itemprop=name]").last();
         if (element == null) {
             throw new ParseException("Couldn't find name!", 0);
         }
